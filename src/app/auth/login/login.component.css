@@ -1,0 +1,45 @@
+body {
+  background-color: #1f1f1f; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+.card {
+  background-color: #2a2a2a; /* Fondo de la tarjeta gris oscuro */
+  border: none;
+}
+.card-title {
+  color: #ffffff; /* Color del texto del título blanco */
+}
+.btn-primary {
+  background-color: #0d6efd; /* Botón azul */
+  border-color: #0a58ca;
+}
+.btn-primary:hover {
+  background-color: #0a58ca; /* Botón azul oscuro al hacer hover */
+  border-color: #0535a0;
+}
+.form-control {
+  background-color: #3a3a3a; /* Campo de texto gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  border: 1px solid #545454; /* Borde gris medio */
+}
+.form-control:focus {
+  background-color: #444444; /* Campo de texto un poco más claro al enfocar */
+  border-color: #0d6efd; /* Borde azul al enfocar */
+  box-shadow: none; /* Sin sombra de enfoque */
+}
+a {
+  color: #0d6efd; /* Enlaces en azul */
+}
+a:hover {
+  color: #0a58ca; /* Enlaces azul oscuro al hacer hover */
+}
+
+.text-center span {
+  color: #ffffff; /* Texto blanco para el texto "Don't have an account?" */
+}
+
+.form-control::placeholder {
+  color: #b0b0b0; /* Color gris claro para el placeholder */
+  opacity: 1; /* Asegúrate de que el color se muestre correctamente */
+}
+

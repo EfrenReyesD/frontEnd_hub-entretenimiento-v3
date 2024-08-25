@@ -1,0 +1,19 @@
+
+<h3 class="titles-home">¡Descubre Las Mejores Peliculas!</h3>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let movie of movies">
+      <div class="card">
+        <img [src]="movie.poster_url" class="card-img-top" alt="{{ movie.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description | slice:0:20 }}...</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary btn-sm">Ver</button>
+          <button class="btn btn-danger btn-sm">Favoritos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

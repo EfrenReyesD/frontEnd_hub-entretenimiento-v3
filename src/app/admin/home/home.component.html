@@ -1,0 +1,103 @@
+
+<h3 class="titles-home">¡Descubre lo Ultimo en Entretenimiento!</h3>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let movie of movies">
+      <div class="card">
+        <img [src]="movie.poster_url" class="card-img-top" alt="{{ movie.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description | slice:0:20 }}...</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary btn-sm">Ver</button>
+          <button  (click)="addToFavorites(movie.id)" class="btn btn-danger btn-sm">Favoritos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="titles-home">¡Las más esperadas!</h3>
+
+
+<div class="container mt-5">
+  <div class="row">
+      <!-- Movie Card 1 -->
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="https://www.billboard.com/wp-content/uploads/2023/08/bad-bunny-2023-met-gala-billboard-espanol-1548.jpg?w=942&h=623&crop=1" class="card-img-top" alt="Movie 1">
+              <div class="card-body">
+                  <h5 class="card-title">Movie Title 1</h5>
+                  <p class="card-text">Short description of the movie goes here.</p>
+              </div>
+              <div class="card-buttons">
+                  <button class="btn btn-primary">Ver</button>
+                  <button class="btn btn-danger">Favoritos</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Movie Card 2 -->
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="movie2.jpg" class="card-img-top" alt="Movie 2">
+              <div class="card-body">
+                  <h5 class="card-title">Movie Title 2</h5>
+                  <p class="card-text">Short description of the movie goes here.</p>
+              </div>
+              <div class="card-buttons">
+                  <button class="btn btn-primary">Ver</button>
+                  <button class="btn btn-danger">Favoritos</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Movie Card 3 -->
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <img src="movie3.jpg" class="card-img-top" alt="Movie 3">
+              <div class="card-body">
+                  <h5 class="card-title">Movie Title 3</h5>
+                  <p class="card-text">Short description of the movie goes here.</p>
+              </div>
+              <div class="card-buttons">
+                  <button class="btn btn-primary">Ver</button>
+                  <button class="btn btn-danger">Favoritos</button>
+              </div>
+          </div>
+      </div>
+
+            <!-- Movie Card 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="movie3.jpg" class="card-img-top" alt="Movie 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Movie Title 3</h5>
+                      <p class="card-text">Short description of the movie goes here.</p>
+                  </div>
+                  <div class="card-buttons">
+                      <button class="btn btn-primary">Ver</button>
+                      <button class="btn btn-danger">Favoritos</button>
+                  </div>
+              </div>
+          </div>
+
+
+                <!-- Movie Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="movie3.jpg" class="card-img-top" alt="Movie 3">
+            <div class="card-body">
+                <h5 class="card-title">Movie Title 3</h5>
+                <p class="card-text">Short description of the movie goes here.</p>
+            </div>
+            <div class="card-buttons">
+                <button class="btn btn-primary">Ver</button>
+                <button class="btn btn-danger">Favoritos</button>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+</div>

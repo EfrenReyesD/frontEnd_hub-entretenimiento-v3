@@ -1,0 +1,39 @@
+.titles-home{
+  color:aliceblue;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ }
+
+/* Asegúrate de que el archivo CSS esté vinculado a tu componente o página */
+.card {
+  max-width: 200px; /* Ajusta el valor según el tamaño que prefieras */
+  margin: auto; /* Centra las tarjetas horizontalmente */
+}
+
+.card-img-top {
+  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionar */
+  height: 300px; /* Ajusta la altura de la imagen */
+}
+
+.card-body {
+  overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+ .card-img-top:hover {
+   transform: scale(1.05);
+ }
+
+
+ .card-buttons {
+   margin-top: auto;
+   display: flex;
+   justify-content: center;
+   padding: 0.5rem;
+   gap: 1rem; /*Espacio entre los 2 botones */
+ }
+
+ .card-buttons button {
+   border-radius: 50px;
+   padding: 0.3rem 0.6rem; /* Padding reducido para botones más pequeños */
+   font-size: 0.75rem; /* Tamaño de fuente reducido */
+ }
